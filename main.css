@@ -85,10 +85,28 @@ ul {
     background: #a71d2a;
 }
 
+.completed-btn {
+    background: #38dc35;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.completed-btn:hover {
+    background: #19da16;
+}
+
 #error-msg {
     margin-top: 10px;
     font-size: 15px;
     color: #a71d2a;
+}
+
+.completed {
+    text-decoration: 2px line-through;
+    color: gray;
 }
 
 
