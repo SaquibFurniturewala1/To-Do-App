@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.982);
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.list-container {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: #DC3545;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #a71d2a;
+}
+
+#error-msg {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #a71d2a;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .list-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .delete-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
